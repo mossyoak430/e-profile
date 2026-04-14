@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 span {
     line-height: 1.25;
 }
 
+h1 {
+    font-size: 36px;
+}
+
 p {
     line-height: 1.5;
     font-size: 16px;
@@ -32,6 +36,11 @@ li {
 .row {
     width: 100%;
     max-width: 800%
+    margin: 0 auto;
+}
+
+.text-purple {
+    color: #6030b1;
 }
 
 /*NAVIGATION BAR*/
@@ -88,6 +97,9 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;    
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .about-me__picture--mask {
@@ -95,8 +107,30 @@ nav {
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
+    box-shadow: 0 9px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
 }
 
 .about-me__picture {
     width: 100px;
+
+/* Improving my own picture */
+transform: scale(1.5);
+padding-top: 8px;
+}
+
+.about-me__info--title {
+    margin-bottom: 16px;
+}
+
+.about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
 }
